@@ -1,22 +1,16 @@
-{{! Check for Blog Cover Existence }}
-{{#if @blog.cover}}
-        <header role='banner' id="site-header" style="background: url({{@blog.cover}}) no-repeat center">
-    {{else}}
-        <header role='banner' id="site-header">
-{{/if}}
-
 {{! Check for Blog Logo Existence }}
-{{#if @blog.logo}}
-    <a id="site-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
-{{/if}}
-<h1 id="site-title">
-    <a href='{{@blog.url}}'>
-        {{@blog.title}}
-    </a>
-</h1>
-<h2 id="site-description">
-<a href='{{@blog.url}}'>
-{{@blog.description}}
-</a>
-</h2>
-</header>
+
+<div id="sidebar">
+    <div id="bottom">
+        {{#if @blog.logo}}
+            <a href="{{@blog.url}}"><img id="picture" src="{{@blog.logo}}" alt="{{@blog.title}}" width="200" height="200"/></a>
+        {{/if}}
+        <div id="navigation">
+            <ul>
+                <li class="menulist"><a class="menulink" href="/tag/writing">Writing</a></li>
+                <li class="menulist"><a class="menulink" href="/tag/scratch">Scratch</a></li>
+                <li class="menulist"><a class="menulink" href="https://www.youtube.com/channel/UCsNFRtRpn-LLra0dFrJpObg/videos">Videos</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
