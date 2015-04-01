@@ -1,7 +1,7 @@
 
 @font-face{
     font-family: Adobe Garamond Pro;
-    src: url("/fonts/garamond.ttf");
+    src: url("/assets/garamond.ttf");
 
 }
 
@@ -87,9 +87,27 @@ body{
     font-family: Adobe Garamond Pro;
 }
 
+#pagination{
+    
+    margin-top: 50px;
+}
 
+#pagination-older{
 
+    color: black;
+    text-decoration: none;
+    float: right;
+}
 
+#pagination-newer{
 
+    color: black;
+    text-decoration: none;
+    float: left;
+}
 
+img[src$='#img-resize'] { 
 
+    max-width : 400px;
+
+}
