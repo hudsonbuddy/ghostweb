@@ -90,6 +90,7 @@ body{
 #pagination{
     
     margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 #pagination-older{
@@ -108,6 +109,6 @@ body{
 
 img[src$='#img-resize'] { 
 
-    max-width : 400px;
+    width : 400px;
 
 }
